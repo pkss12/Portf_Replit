@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Patrick dos Santos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(120deg, #0f0f0f, #1f1f1f);
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header {
+      background: #000;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3em;
+      color: #00ff99;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .timeline {
+      border-left: 4px solid #00ff99;
+      padding-left: 20px;
+      margin-top: 40px;
+    }
+    .timeline h3 {
+      color: #00ff99;
+      margin-bottom: 5px;
+    }
+    .timeline p {
+      margin-bottom: 20px;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .skill {
+      background: #111;
+      border: 2px solid #00ff99;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+    .numbers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .number-box {
+      background: #111;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      border: 2px solid #00ff99;
+    }
+    .number-box h2 {
+      font-size: 2.5em;
+      color: #00ff99;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #000;
+      color: #777;
+    }
+    a {
+      color: #00ff99;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Patrick dos Santos</h1>
+    <p>Analista de Gestão | Logística | Melhoria Contínua | Dados</p>
+  </header>
+  <section>
+    <h2>Sobre Mim</h2>
+    <p>Profissional com ampla experiência em Logística Integrada, Excelência Operacional e Análise de Dados. Especialista em encontrar oportunidades de melhoria com base em dados, processos e pessoas. Possuo MBA em Comércio Exterior, Especialização em Gestão de Pessoas, e atualmente curso Análise de Dados pela Microsoft.</p>
+  </section>
+  <section>
+    <h2>Linha do Tempo</h2>
+    <div class="timeline">
+      <h3>2021 - Hoje | Analista de Gestão - Era Técnica Engenharia</h3>
+      <p>Responsável por análises logísticas, projetos de melhoria contínua, uso avançado de Excel e Power BI para otimização de operações.</p>
+      <h3>2017 - 2021 | Logística e Operações - Setor Privado</h3>
+      <p>Atuação em Centros de Distribuição, planejamento de transportes, redução de perdas e custos logísticos em até 23%.</p>
+    </div>
+  </section>
+  <section>
+    <h2>Skills & Ferramentas</h2>
+    <div class="skills">
+      <div class="skill">Excel Avançado</div>
+      <div class="skill">Power BI</div>
+      <div class="skill">VBA</div>
+      <div class="skill">Power Query</div>
+      <div class="skill">Logística Integrada</div>
+      <div class="skill">Melhoria Contínua</div>
+      <div class="skill">Gestão de Indicadores</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Python (iniciante)</div>
+    </div>
+  </section>
+  <section>
+    <h2>Projetos de Destaque</h2>
+    <ul>
+      <li>✔ Implementação de dashboards operacionais com redução de 15h semanais de análises manuais.</li>
+      <li>✔ Otimização de roteirização logística com aumento de produtividade de 18%.</li>
+      <li>✔ Desenvolvimento de planilhas inteligentes com VBA para controle de frota, tempo de carregamento e entrega.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Impactos Gerados</h2>
+    <div class="numbers">
+      <div class="number-box">
+        <h2>+23%</h2>
+        <p>Redução de Custos Logísticos</p>
+      </div>
+      <div class="number-box">
+        <h2>+35%</h2>
+        <p>Agilidade em Processos Operacionais</p>
+      </div>
+      <div class="number-box">
+        <h2>-42h</h2>
+        <p>Economia Semanal em Processos Manuais</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Projeções Profissionais</h2>
+    <p>Nos próximos 3 anos, pretendo aprofundar minha especialização em Inteligência Artificial aplicada à Logística e concluir o mestrado em Engenharia de Sistemas Logísticos. Meu foco é liderar projetos sustentáveis com alto impacto nos centros urbanos e no modal aquaviário.</p>
+  </section>
+  <footer>
+    <p>Contato: <a href="mailto:patricksantos496.ps@gmail.com">patricksantos496.ps@gmail.com</a> | WhatsApp: <a href="https://wa.me/5511987057864">11 98705-7864</a> | <a href="https://www.linkedin.com/in/patrick-santos-9650a621b/" target="_blank">LinkedIn</a></p>
+  </footer>
+</body>
+</html>
