@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a modern portfolio website built for Patrick dos Santos, a logistics and data analysis professional. The application is a full-stack TypeScript project featuring a React frontend with a Node.js/Express backend. The site showcases professional experience, skills, projects, and includes a contact form for potential clients or employers.
+This is a modern portfolio website built for Patrick dos Santos, Analista de Gestão at Era Técnica Engenharia Construções e Serviços LTDA since August 2021. The application is a full-stack TypeScript project featuring a React frontend with a Node.js/Express backend. The site showcases his expertise in Integrated Logistics, Operational Excellence, Process Improvement, and Data Analysis, with a focus on AI applications in logistics.
 
 ## User Preferences
 
@@ -41,12 +41,14 @@ Preferred communication style: Simple, everyday language.
 - **Motion Design**: Progressive enhancement with Framer Motion animations
 
 ### Portfolio Features
-- **Hero Section**: Professional introduction with animated elements
-- **About Section**: Personal background and specializations
-- **Experience Timeline**: Work history with achievements and impact metrics
-- **Skills Showcase**: Technical and management skills with visual progress indicators
-- **Projects Portfolio**: Highlighted work with measurable results
-- **Contact Form**: Functional contact form with validation and submission handling
+- **Hero Section**: Professional introduction with animated elements showcasing current role at Era Técnica
+- **About Section**: Educational background including MBA, specializations, and current Microsoft Data Analysis course
+- **Experience Timeline**: Detailed current role with specific responsibilities and achievements
+- **Skills Showcase**: Technical skills (Excel Advanced, Power BI, VBA, Office Scripts) and process management capabilities  
+- **Languages Section**: Multi-language capabilities (Portuguese native, English/Spanish intermediate)
+- **Projects Portfolio**: Real work projects including process automation, dashboards, and AI applications in logistics
+- **Future Goals**: Academic and professional objectives including AI specialization and maritime logistics research
+- **Contact Form**: Functional contact form with São Paulo location and real contact information
 
 ## External Dependencies
 

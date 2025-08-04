@@ -101,7 +101,7 @@ export function Contact() {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto" />
             <p className="text-xl text-muted-foreground mt-6">
-              Vamos conversar sobre oportunidades e projetos futuros
+              Localizado em São Paulo, SP - Vamos conversar sobre oportunidades e projetos futuros
             </p>
           </motion.div>
 
@@ -227,12 +227,11 @@ export function Contact() {
                 </div>
 
                 <div className="mt-8 pt-8 border-t border-border">
-                  <h4 className="font-bold mb-4">Projeções Profissionais</h4>
+                  <h4 className="font-bold mb-4">Disponibilidade</h4>
                   <p className="text-muted-foreground leading-relaxed">
-                    Nos próximos 3 anos, pretendo aprofundar minha
-                    especialização em Inteligência Artificial aplicada à
-                    Logística e concluir o mestrado em Engenharia de Sistemas
-                    Logísticos.
+                    Analista de Gestão na Era Técnica Engenharia desde agosto de 2021.
+                    Aberto a discussões sobre oportunidades de colaboração, projetos de 
+                    consultoria e desenvolvimento profissional em logística e análise de dados.
                   </p>
                 </div>
               </div>

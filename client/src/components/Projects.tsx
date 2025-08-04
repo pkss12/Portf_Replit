@@ -5,37 +5,37 @@ import { Badge } from "@/components/ui/badge";
 export function Projects() {
   const projects = [
     {
-      title: "Dashboards Operacionais",
+      title: "Automação de Processos Logísticos",
       description:
-        "Implementação de dashboards interativos com Power BI, resultando em redução de 15h semanais de análises manuais e melhoria na tomada de decisões.",
+        "Desenvolvimento de soluções automatizadas com VBA e Office Scripts para otimização de processos logísticos, reduzindo significativamente o tempo de execução de tarefas manuais.",
       icon: BarChart4,
       color: "primary",
       bgGradient: "from-primary/20 to-primary/5",
-      tags: ["Power BI", "DAX", "KPIs"],
-      impact: "-15h",
-      impactDescription: "semanais economizadas",
+      tags: ["VBA", "Office Scripts", "Automação"],
+      impact: "Otimizado",
+      impactDescription: "processos logísticos",
     },
     {
-      title: "Otimização de Roteirização",
+      title: "Dashboards & Análise de Performance",
       description:
-        "Desenvolvimento de algoritmos de otimização para roteirização logística, aumentando a produtividade da frota em 18% e reduzindo custos operacionais.",
+        "Criação de dashboards operacionais para gestão logística, fornecendo insights valiosos para tomada de decisões estratégicas e monitoramento de KPIs.",
       icon: Route,
       color: "secondary",
       bgGradient: "from-secondary/20 to-secondary/5",
-      tags: ["Excel VBA", "Algoritmos", "Logística"],
-      impact: "+18%",
-      impactDescription: "produtividade",
+      tags: ["Power BI", "Dashboards", "KPIs"],
+      impact: "Melhoria",
+      impactDescription: "na tomada de decisão",
     },
     {
-      title: "Controle Inteligente de Frota",
+      title: "IA Aplicada à Logística",
       description:
-        "Criação de planilhas automatizadas com VBA para controle de frota, monitoramento de tempo de carregamento e otimização de entregas.",
+        "Pesquisa e aplicação de técnicas de Inteligência Artificial em processos logísticos e análise de dados, explorando soluções inovadoras para otimização operacional.",
       icon: Truck,
       color: "accent",
       bgGradient: "from-accent/20 to-accent/5",
-      tags: ["VBA", "Automação", "Monitoramento"],
-      impact: "-42h",
-      impactDescription: "processos manuais",
+      tags: ["IA", "Machine Learning", "Inovação"],
+      impact: "Futuro",
+      impactDescription: "da logística",
     },
   ];
 

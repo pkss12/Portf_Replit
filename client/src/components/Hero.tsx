@@ -50,7 +50,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Analista de Gestão • Logística • Melhoria Contínua • Análise de
+            Analista de Gestão • Logística Integrada • Excelência Operacional • Análise de
             Dados
           </motion.p>
 
@@ -92,24 +92,24 @@ export function Hero() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <div className="text-3xl font-bold text-primary mb-2">+5</div>
-              <div className="text-muted-foreground">Anos de Experiência</div>
+              <div className="text-3xl font-bold text-primary mb-2">3+</div>
+              <div className="text-muted-foreground">Anos na Era Técnica</div>
             </motion.div>
             <motion.div
               className="text-center"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <div className="text-3xl font-bold text-secondary mb-2">+15</div>
-              <div className="text-muted-foreground">Projetos Concluídos</div>
+              <div className="text-3xl font-bold text-secondary mb-2">MBA</div>
+              <div className="text-muted-foreground">Comércio Exterior</div>
             </motion.div>
             <motion.div
               className="text-center"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <div className="text-3xl font-bold text-accent mb-2">23%</div>
-              <div className="text-muted-foreground">Redução de Custos</div>
+              <div className="text-3xl font-bold text-accent mb-2">AI</div>
+              <div className="text-muted-foreground">Foco em IA & Dados</div>
             </motion.div>
           </motion.div>
         </div>

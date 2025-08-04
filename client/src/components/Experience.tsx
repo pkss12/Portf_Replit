@@ -5,35 +5,21 @@ export function Experience() {
   const experiences = [
     {
       title: "Analista de Gestão",
-      company: "Era Técnica Engenharia",
-      period: "2021 - Atual",
+      company: "Era Técnica Engenharia Construções e Serviços LTDA",
+      period: "Agosto 2021 - Atual",
       icon: Briefcase,
       color: "from-primary to-secondary",
       achievements: [
-        "Dashboards Operacionais",
-        "Automação VBA",
-        "Análise de Dados",
-        "Melhoria Contínua",
+        "Análise e Otimização de Processos Logísticos",
+        "Implementação de Projetos de Melhoria Contínua",
+        "Gestão Operacional Integrada",
+        "Análise de Dados para Tomada de Decisão",
+        "Automação com VBA e Office Scripts",
+        "Dashboards Operacionais em Power BI",
       ],
       description:
-        "Responsável por análises logísticas, projetos de melhoria contínua, uso avançado de Excel e Power BI para otimização de operações. Lidero iniciativas de transformação digital e automação de processos.",
+        "Responsável por análise e otimização de processos logísticos, implementação de projetos de melhoria contínua e gestão operacional integrada. Desenvolvo soluções de automação e análise de dados para suporte estratégico à tomada de decisão, com foco em excelência operacional.",
       status: "current",
-    },
-    {
-      title: "Especialista em Logística",
-      company: "Setor Privado",
-      period: "2017 - 2021",
-      icon: Package,
-      color: "from-secondary to-accent",
-      achievements: [
-        "Gestão de CD",
-        "Otimização de Rotas",
-        "Redução de Custos",
-        "Controle de Qualidade",
-      ],
-      description:
-        "Atuação em Centros de Distribuição, planejamento de transportes, redução de perdas e custos logísticos. Implementação de processos otimizados que resultaram em economia significativa.",
-      status: "previous",
     },
   ];
 

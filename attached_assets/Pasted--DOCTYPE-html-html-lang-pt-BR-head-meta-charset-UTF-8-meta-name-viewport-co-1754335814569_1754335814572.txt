@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perfil Profissional - Patrick dos Santos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background: #f4f4f4;
+      color: #222;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    section {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
+    ul {
+      list-style: inside disc;
+    }
+    .contact-info p {
+      margin: 4px 0;
+    }
+    .skills span {
+      background: #3498db;
+      color: white;
+      padding: 5px 10px;
+      margin: 5px 8px 5px 0;
+      display: inline-block;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Patrick dos Santos</h1>
+    <div class="contact-info">
+      <p><strong>Email:</strong> patricksantos496.ps@gmail.com</p>
+      <p><strong>Localização:</strong> São Paulo, SP, Brasil</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>Resumo Profissional</h2>
+    <p>Analista de Gestão na Era Técnica Engenharia Construções e Serviços LTDA desde agosto de 2021, com foco em Logística, Melhoria Contínua, Excelência Operacional e Logística Integrada.</p>
+  </section>
+
+  <section>
+    <h2>Formação Acadêmica</h2>
+    <ul>
+      <li>Curso em Análise de Dados - Microsoft (em andamento)</li>
+      <li>Graduação: Tecnólogo em Gestão e Logística</li>
+      <li>MBA em Comércio Exterior</li>
+      <li>Especialização em Gestão de Pessoas - Universidade Cruzeiro do Sul</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Experiência Profissional</h2>
+    <ul>
+      <li><strong>Era Técnica Engenharia Construções e Serviços LTDA</strong> (Ago/2021 – Presente)<br/>
+        Cargo: Analista de Gestão<br/>
+        Atividades principais: Análise e otimização de processos logísticos, implementação de projetos de melhoria contínua, gestão operacional integrada e análise de dados para suporte à tomada de decisão.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Habilidades Técnicas</h2>
+    <div class="skills">
+      <span>Excel Avançado</span>
+      <span>Power BI Intermediário</span>
+      <span>VBA</span>
+      <span>Análise de Dados</span>
+      <span>Melhoria Contínua</span>
+      <span>Excelência Operacional</span>
+      <span>Logística Integrada</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Idiomas</h2>
+    <ul>
+      <li>Português: Nativo</li>
+      <li>Inglês: Intermediário</li>
+      <li>Espanhol: Intermediário</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projetos e Áreas de Interesse</h2>
+    <ul>
+      <li>Automação de processos logísticos com VBA e Office Scripts</li>
+      <li>Aplicação de Inteligência Artificial em Logística e Análise de Dados</li>
+      <li>Melhoria contínua e análise de performance operacional</li>
+      <li>Modelagem e análise de sistemas logísticos sustentáveis (interesse acadêmico para mestrado)</li>
+      <li>Estudo do impacto do transporte aquaviário em grandes metrópoles no Brasil</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Informações Adicionais</h2>
+    <ul>
+      <li>Planejamento e elaboração de cronogramas de estudo para aprimoramento em Excel, VBA, Inteligência Artificial e Análise de Dados.</li>
+      <li>Atuação com dashboards e automações voltadas à gestão logística.</li>
+      <li>Experiência em comunicação em inglês e espanhol em nível intermediário.</li>
+    </ul>
+  </section>
+  
+</body>
+</html>

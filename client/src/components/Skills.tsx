@@ -5,39 +5,39 @@ import { Progress } from "@/components/ui/progress";
 export function Skills() {
   const skillCategories = [
     {
-      title: "Técnicas",
+      title: "Ferramentas Técnicas",
       icon: Code,
       color: "primary",
       bgClass: "from-primary/10 to-primary/5",
       skills: [
         { name: "Excel Avançado", level: 95 },
-        { name: "Power BI", level: 90 },
-        { name: "VBA", level: 85 },
-        { name: "SQL", level: 75 },
+        { name: "Power BI Intermediário", level: 78 },
+        { name: "VBA & Office Scripts", level: 88 },
+        { name: "Microsoft Análise de Dados", level: 70 },
       ],
     },
     {
-      title: "Análise",
+      title: "Análise & Processos",
       icon: BarChart3,
       color: "secondary",
       bgClass: "from-secondary/10 to-secondary/5",
       skills: [
-        { name: "Power Query", level: 90 },
-        { name: "Análise de Dados", level: 88 },
-        { name: "KPIs & Métricas", level: 92 },
-        { name: "Python", level: 60 },
+        { name: "Análise de Dados", level: 85 },
+        { name: "Automação de Processos", level: 88 },
+        { name: "Dashboards & Relatórios", level: 82 },
+        { name: "Inteligência Artificial", level: 65 },
       ],
     },
     {
-      title: "Gestão",
+      title: "Gestão & Logística",
       icon: Users,
       color: "accent",
       bgClass: "from-accent/10 to-accent/5",
       skills: [
-        { name: "Logística Integrada", level: 95 },
-        { name: "Melhoria Contínua", level: 90 },
-        { name: "Gestão de Equipes", level: 85 },
-        { name: "Gestão de Projetos", level: 82 },
+        { name: "Logística Integrada", level: 92 },
+        { name: "Excelência Operacional", level: 90 },
+        { name: "Melhoria Contínua", level: 88 },
+        { name: "Gestão de Processos", level: 85 },
       ],
     },
   ];

@@ -12,19 +12,19 @@ export function About() {
     },
     {
       icon: BarChart3,
-      title: "Análise de Dados",
+      title: "Análise de Dados & IA",
       color: "text-secondary",
       bgColor: "bg-secondary",
     },
     {
       icon: TrendingUp,
-      title: "Melhoria Contínua",
+      title: "Excelência Operacional",
       color: "text-accent",
       bgColor: "bg-accent",
     },
     {
       icon: Users,
-      title: "Gestão de Equipes",
+      title: "Gestão de Processos",
       color: "text-primary",
       bgColor: "bg-primary",
     },
@@ -53,7 +53,7 @@ export function About() {
               viewport={{ once: true }}
             >
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Profissional com ampla experiência em{" "}
+                Analista de Gestão na Era Técnica Engenharia desde agosto de 2021, com especialização em{" "}
                 <span className="text-primary font-semibold">
                   Logística Integrada
                 </span>
@@ -63,16 +63,16 @@ export function About() {
                 </span>{" "}
                 e{" "}
                 <span className="text-accent font-semibold">
-                  Análise de Dados
+                  Melhoria Contínua
                 </span>
                 .
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Especialista em encontrar oportunidades de melhoria com base em
-                dados, processos e pessoas. Possuo MBA em Comércio Exterior,
-                Especialização em Gestão de Pessoas, e atualmente curso Análise
-                de Dados pela Microsoft.
+                Tecnólogo em Gestão e Logística com MBA em Comércio Exterior e 
+                Especialização em Gestão de Pessoas pela Universidade Cruzeiro do Sul. 
+                Atualmente cursando Análise de Dados pela Microsoft, com foco em 
+                aplicação de IA em processos logísticos.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -80,10 +80,13 @@ export function About() {
                   MBA Comércio Exterior
                 </Badge>
                 <Badge variant="secondary" className="bg-secondary/10 text-secondary hover:bg-secondary/20">
-                  Gestão de Pessoas
+                  Especialização Gestão de Pessoas
                 </Badge>
                 <Badge variant="secondary" className="bg-accent/10 text-accent hover:bg-accent/20">
-                  Análise de Dados
+                  Tecnólogo Gestão e Logística
+                </Badge>
+                <Badge variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
+                  Análise de Dados - Microsoft
                 </Badge>
               </div>
             </motion.div>
