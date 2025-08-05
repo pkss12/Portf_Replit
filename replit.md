@@ -6,7 +6,7 @@ This is a modern portfolio website built for Patrick dos Santos, Analista de Ges
 
 ## User Preferences
 
-Preferred communication style: Simple, everyday language.
+Preferred communication style: Simple, everyday language in Portuguese.
 
 ## System Architecture
 
