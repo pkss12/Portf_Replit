@@ -1,64 +1,17 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, Linkedin, Send } from "lucide-react";
+import { Mail, Phone, Linkedin, MessageCircle, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { useToast } from "@/hooks/use-toast";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
-
-interface ContactFormData {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
 
 export function Contact() {
-  const [formData, setFormData] = useState<ContactFormData>({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const { toast } = useToast();
-  const queryClient = useQueryClient();
-
-  const submitContactMutation = useMutation({
-    mutationFn: async (data: ContactFormData) => {
-      const response = await apiRequest("POST", "/api/contact", data);
-      return response.json();
-    },
-    onSuccess: () => {
-      toast({
-        title: "Mensagem enviada com sucesso!",
-        description: "Entrarei em contato em breve.",
-      });
-      setFormData({ name: "", email: "", subject: "", message: "" });
-      queryClient.invalidateQueries({ queryKey: ["/api/contacts"] });
-    },
-    onError: () => {
-      toast({
-        title: "Erro ao enviar mensagem",
-        description: "Tente novamente ou entre em contato diretamente.",
-        variant: "destructive",
-      });
-    },
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    submitContactMutation.mutate(formData);
+  const handleEmailContact = () => {
+    const subject = encodeURIComponent("Contato Profissional - Portfolio");
+    const body = encodeURIComponent("Olá Patrick,\n\nVi seu portfólio e gostaria de conversar sobre oportunidades.\n\nAtt,");
+    window.open(`mailto:patricksantos496.ps@gmail.com?subject=${subject}&body=${body}`);
   };
 
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+  const handleWhatsAppContact = () => {
+    const message = encodeURIComponent("Olá Patrick! Vi seu portfólio e gostaria de conversar sobre oportunidades profissionais.");
+    window.open(`https://wa.me/5511987057864?text=${message}`, '_blank');
   };
 
   const contactInfo = [
@@ -106,81 +59,54 @@ export function Contact() {
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-12">
-            {/* Contact Form */}
+            {/* Direct Contact Options */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <Label htmlFor="name">Nome</Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    className="mt-2"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="email">E-mail</Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    className="mt-2"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="subject">Assunto</Label>
-                  <Input
-                    id="subject"
-                    name="subject"
-                    type="text"
-                    required
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    className="mt-2"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="message">Mensagem</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    required
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    className="mt-2 resize-none"
-                  />
-                </div>
+              <div className="space-y-6">
+                <h3 className="text-2xl font-bold mb-6">Entre em Contato Diretamente</h3>
+                
+                <Button
+                  onClick={handleEmailContact}
+                  className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white font-semibold py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+                  size="lg"
+                >
+                  <Mail className="w-5 h-5 mr-2" />
+                  Enviar E-mail
+                </Button>
 
                 <Button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white font-semibold py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
-                  disabled={submitContactMutation.isPending}
+                  onClick={handleWhatsAppContact}
+                  className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+                  size="lg"
                 >
-                  {submitContactMutation.isPending ? (
-                    "Enviando..."
-                  ) : (
-                    <>
-                      <Send className="w-5 h-5 mr-2" />
-                      Enviar Mensagem
-                    </>
-                  )}
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  WhatsApp
                 </Button>
-              </form>
+
+                <Button
+                  onClick={() => window.open("https://www.linkedin.com/in/patrick-santos-9650a621b/", '_blank')}
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+                  size="lg"
+                >
+                  <Linkedin className="w-5 h-5 mr-2" />
+                  LinkedIn
+                </Button>
+
+                <div className="mt-8 p-6 bg-gradient-to-br from-muted/30 to-muted/10 rounded-xl">
+                  <h4 className="font-bold mb-3 flex items-center">
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Resposta Rápida
+                  </h4>
+                  <p className="text-muted-foreground text-sm">
+                    Prefere WhatsApp para respostas mais rápidas ou e-mail para propostas detalhadas. 
+                    Também estou no LinkedIn para networking profissional.
+                  </p>
+                </div>
+              </div>
             </motion.div>
 
             {/* Contact Info */}

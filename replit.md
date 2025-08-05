@@ -2,7 +2,15 @@
 
 ## Overview
 
-This is a modern portfolio website built for Patrick dos Santos, Analista de Gestão at Era Técnica Engenharia Construções e Serviços LTDA since August 2021. The application is a full-stack TypeScript project featuring a React frontend with a Node.js/Express backend. The site showcases his expertise in Integrated Logistics, Operational Excellence, Process Improvement, and Data Analysis, with a focus on AI applications in logistics.
+This is a modern portfolio website built for Patrick dos Santos, Analista de Gestão at Era Técnica Engenharia Construções e Serviços LTDA since August 2021. Originally a full-stack TypeScript project, it has been converted to a static React application for free deployment. The site showcases his expertise in Integrated Logistics, Operational Excellence, Process Improvement, and Data Analysis, with a focus on AI applications in logistics.
+
+## Recent Changes (January 2025)
+
+- **Converted to Static Version**: Removed backend dependencies to enable free static deployment
+- **Contact System Updated**: Replaced functional contact form with direct contact buttons (Email, WhatsApp, LinkedIn)
+- **Build Optimization**: Generated production-ready static files in `dist/public/` directory
+- **SEO Enhanced**: Added comprehensive meta tags and Portuguese language support
+- **Deploy Ready**: Prepared for Replit Static Deployment or other free hosting platforms
 
 ## User Preferences
 
