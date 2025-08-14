@@ -16,9 +16,7 @@ export function Navigation() {
     { name: "Sobre", id: "sobre" },
     { name: "Experiência", id: "experiencia" },
     { name: "Skills", id: "skills" },
-    { name: "Idiomas", id: "idiomas" },
     { name: "Projetos", id: "projetos" },
-    { name: "Objetivos", id: "objetivos" },
     { name: "Contato", id: "contato" },
   ];
 
