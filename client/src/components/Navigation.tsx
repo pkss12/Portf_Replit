@@ -66,20 +66,6 @@ export function Navigation() {
                   {item.name}
                 </motion.button>
               ))}
-
-              {/* Botão para baixar o currículo */}
-              <Button
-                variant="outline"
-                size="icon"
-                onClick={() => {
-                  const link = document.createElement("a");
-                  link.href = "/curriculo.pdf";
-                  link.download = "Patrick_dos_Santos_Curriculo.pdf";
-                  link.click();
-                }}
-              >
-                Baixar Currículo
-              </Button>
             </div>
 
             {/* Actions */}
@@ -134,20 +120,6 @@ export function Navigation() {
                   {item.name}
                 </motion.button>
               ))}
-
-              {/* Botão para baixar o currículo no mobile */}
-              <Button
-                variant="outline"
-                size="icon"
-                onClick={() => {
-                  const link = document.createElement("a");
-                  link.href = "/curriculo.pdf";
-                  link.download = "Patrick_dos_Santos_Curriculo.pdf";
-                  link.click();
-                }}
-              >
-                Baixar Currículo
-              </Button>
             </div>
           </motion.div>
         </div>
