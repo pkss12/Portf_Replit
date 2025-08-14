@@ -66,11 +66,17 @@ export function Navigation() {
                   {item.name}
                 </motion.button>
               ))}
-              {/* Botão de download do currículo */}
+
+              {/* Botão para baixar o currículo */}
               <Button
                 variant="outline"
                 size="icon"
-                onClick={() => window.open("/curriculo.pdf", "_blank")}
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "/curriculo.pdf";
+                  link.download = "Patrick_dos_Santos_Curriculo.pdf";
+                  link.click();
+                }}
               >
                 Baixar Currículo
               </Button>
@@ -128,11 +134,17 @@ export function Navigation() {
                   {item.name}
                 </motion.button>
               ))}
-              {/* Botão de download do currículo no menu mobile */}
+
+              {/* Botão para baixar o currículo no mobile */}
               <Button
                 variant="outline"
                 size="icon"
-                onClick={() => window.open("/curriculo.pdf", "_blank")}
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "/curriculo.pdf";
+                  link.download = "Patrick_dos_Santos_Curriculo.pdf";
+                  link.click();
+                }}
               >
                 Baixar Currículo
               </Button>
