@@ -1,45 +1,30 @@
-import express, { type Request, Response, NextFunction } from "express";
+import express from "express";
 import path from "path";
-import { fileURLToPath } from "url";
-import { dirname } from "path";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-import { registerRoutes } from "./routes";
 
 const app = express();
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+const PORT = process.env.PORT || 3000;
 
-// Middleware de log simples
-app.use((req: Request, res: Response, next: NextFunction) => {
-  console.log(`${req.method} ${req.path}`);
-  next();
+// Caminho absoluto para o currículo
+const curriculoPath = "C:\\Users\\Administrador\\Downloads\\Portf_Replit\\public\\curriculo.pdf";
+
+// Servir arquivos estáticos da pasta public
+app.use(express.static(path.join(__dirname, "../public")));
+
+// Rota para abrir o currículo
+app.get("/curriculo", (req, res) => {
+  res.sendFile(curriculoPath, (err) => {
+    if (err) {
+      console.error("Erro ao abrir o currículo:", err);
+      res.status(500).send("Erro ao abrir o currículo.");
+    }
+  });
 });
 
-// Registro de rotas da API
-(async () => {
-  await registerRoutes(app);
+// Página inicial
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/index.html"));
+});
 
-  // Tratamento de erros
-  app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
-    const status = err.status || err.statusCode || 500;
-    const message = err.message || "Internal Server Error";
-    res.status(status).json({ message });
-  });
-
-  // Servir frontend estático
-  app.use(express.static(path.join(__dirname, "public")));
-
-  // Para qualquer rota não-API, serve index.html
-  app.get("*", (_req, res) => {
-    res.sendFile(path.join(__dirname, "public", "index.html"));
-  });
-
-  // Porta dinâmica (necessário para Render)
-  const port = parseInt(process.env.PORT || "5000", 10);
-  app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
-  });
-})();
+app.listen(PORT, () => {
+  console.log(`Servidor rodando em http://localhost:${PORT}`);
+});
