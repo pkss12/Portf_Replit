@@ -13,12 +13,14 @@ export function Navigation() {
   const scrollProgress = useScrollProgress();
 
   const navigationItems = [
-    { name: "Sobre", id: "sobre" },
-    { name: "Experiência", id: "experiencia" },
-    { name: "Skills", id: "skills" },
-    { name: "Projetos", id: "projetos" },
-    { name: "Contato", id: "contato" },
-  ];
+  { name: "Sobre", id: "sobre" },
+  { name: "Experiência", id: "experiencia" },
+  { name: "Skills", id: "skills" },
+  { name: "Idiomas", id: "idiomas" },       // <-- manter
+  { name: "Projetos", id: "projetos" },
+  { name: "Objetivos", id: "objetivos" },   // <-- manter
+  { name: "Contato", id: "contato" },
+];
 
   const handleNavClick = (id: string) => {
     scrollToSection(id);
