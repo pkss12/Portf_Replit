@@ -66,6 +66,14 @@ export function Navigation() {
                   {item.name}
                 </motion.button>
               ))}
+              {/* Botão de download do currículo */}
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={() => window.open("/curriculo.pdf", "_blank")}
+              >
+                Baixar Currículo
+              </Button>
             </div>
 
             {/* Actions */}
@@ -120,6 +128,14 @@ export function Navigation() {
                   {item.name}
                 </motion.button>
               ))}
+              {/* Botão de download do currículo no menu mobile */}
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={() => window.open("/curriculo.pdf", "_blank")}
+              >
+                Baixar Currículo
+              </Button>
             </div>
           </motion.div>
         </div>
